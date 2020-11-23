@@ -1,0 +1,24 @@
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+.modalTest .modal-title,.modalTest .modal-body{
+    font-size: 14px;
+}
+.modalTest .modal-body a{
+    color:blue;
+}
+
+.palindromeClass .product-discount,.palindromeClass .other-price{
+    display: inline !important;
+}
+.no-results{
+    background-color: #DCDCDC;
+    padding: 30px;
+}
+
+.box-product-new .product-action {
+    margin-top: 23px;
+    position: relative;
+    margin-bottom: 50px;
+}
+

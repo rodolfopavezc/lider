@@ -3,3 +3,4 @@ Flask-PyMongo
 pymongo[tls,srv]
 pytest
 mockupdb
+python-dotenv

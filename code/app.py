@@ -3,10 +3,13 @@ from flask_pymongo import PyMongo
 from bson import json_util
 import os
 from urllib.parse import unquote
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
 port = int(os.environ.get("PORT", 5000))
-app.config["MONGO_URI"] = os.getenv('MONGO_URI', "mongodb+srv://rpavez:Is01oqMYGjUlxM8d@cluster0.hlyz9.mongodb.net/test")
+app.config["MONGO_URI"] = os.getenv('MONGO_URI')
 mongo = PyMongo(app)
 
 @app.route('/')
